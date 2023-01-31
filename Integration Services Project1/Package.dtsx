@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="68"
-  DTS:VersionGUID="{6419CB6C-9121-4239-BF02-59578762AB25}">
+  DTS:VersionBuild="78"
+  DTS:VersionGUID="{73B329D1-7331-4EDB-99FA-40D6D98DA0F7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -18452,10 +18452,6 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="112,42"
-          Id="Package\UNZIP"
-          TopLeft="425,44" />
-        <NodeLayout
           Size="155,42"
           Id="Package\Foreach Loop Container\Data Flow Task"
           TopLeft="22,30.5" />
@@ -18488,24 +18484,28 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="355,284"
-          Size="355,327"
+          PanelSize="218,284"
+          Size="218,327"
           Id="Package\Foreach Loop Container"
-          TopLeft="309,169" />
+          TopLeft="369,168" />
+        <NodeLayout
+          Size="112,42"
+          Id="Package\UNZIP"
+          TopLeft="425,44" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="483.75,86">
+          TopLeft="480,86">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,83"
+              EndConnector="0,82"
               Start="0,0"
-              End="0,75.5">
+              End="0,74.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,75.5" />
+                    End="0,74.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -18534,6 +18534,10 @@
           Size="148,42"
           Id="Package\Foreach Loop Container\Data Flow Task\XML Source 1"
           TopLeft="266,44" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Foreach Loop Container\Data Flow Task\Data Conversion 1"
+          TopLeft="359,166" />
         <NodeLayout
           Size="161,42"
           Id="Package\Foreach Loop Container\Data Flow Task\Data Conversion"
@@ -18570,36 +18574,10 @@
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-85.9019856770833,36.7005347593583,70.6373046875,11.0625"
+              BoundingBox="-85.9019856770834,36.7005347593583,70.6373046875,11.0625"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Foreach Loop Container\Data Flow Task.Paths[Data Conversion Output]"
-          TopLeft="213.25,206">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,88"
-              Start="0,0"
-              End="0,80.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,80.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="170,42"
-          Id="Package\Foreach Loop Container\Data Flow Task\Data Conversion 1"
-          TopLeft="359,166" />
         <EdgeLayout
           Id="Package\Foreach Loop Container\Data Flow Task.Paths[ST_Scard_Detail]"
           TopLeft="357.333333333333,86">
@@ -18632,7 +18610,7 @@
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="6.81554036458333,37.5462304409673,73.0355859375,11.0625"
+              BoundingBox="6.81554036458334,37.5462304409673,73.0355859375,11.0625"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -18658,11 +18636,33 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\Data Flow Task.Paths[Data Conversion Output]"
+          TopLeft="213.25,206">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,88"
+              Start="0,0"
+              End="0,80.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,80.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Foreach Loop Container\Data Flow Task\ST_Scard_Detail">
+    design-time-name="Package\Foreach Loop Container\Data Flow Task\ST_Scard_Head">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -18675,7 +18675,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Foreach Loop Container\Data Flow Task\ST_Scard_Head">
+    design-time-name="Package\Foreach Loop Container\Data Flow Task\ST_Scard_Detail">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
